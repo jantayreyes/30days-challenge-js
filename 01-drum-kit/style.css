@@ -19,12 +19,12 @@ body,html {
 }
 
 .key {
-  border: .4rem solid black;
+  border: .4rem solid rgb(203, 250, 95);
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  transition: all .07s ease;
+  transition: all .15s ease;
   width: 10rem;
   text-align: center;
   color: white;
@@ -33,9 +33,10 @@ body,html {
 }
 
 .playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  transform: scale(1.4);
+  color: rgb(83, 81, 81);
+  border-color: #205815;
+  box-shadow: 0 0 1rem rgb(134, 230, 146);
 }
 
 kbd {
