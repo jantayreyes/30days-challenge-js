@@ -114,5 +114,6 @@
       obj[item]++;
       return obj;
     }, {});
+    
     console.log(transportation);
     
