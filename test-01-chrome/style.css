@@ -1,0 +1,69 @@
+body {
+  font-size: 6px;
+}
+@media only screen and (min-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+}
+.chrome-logo {
+  display: block;
+  width: 28.125em;
+  height: 28.125em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -14.0625em;
+  margin-left: -14.0625em;
+  border-radius: 28.125em;
+  background-image: linear-gradient(
+      240deg,
+      transparent 66.4%,
+      #009c59 0%,
+      #009c59
+    ),
+    linear-gradient(0deg, transparent 71.5%, #e34a35 0%, #e34a35),
+    linear-gradient(290deg, transparent 60%, #e34a35 0%, #e34a35),
+    linear-gradient(120deg, transparent 66%, #ffca38 0%, #ffca38),
+    linear-gradient(57deg, transparent 58%, #ffca38 0%, #ffca38),
+    linear-gradient(190deg, transparent 58%, #009c59 0%, #009c59);
+  box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.05), 0 0 100px rgba(0, 0, 0, 0.05),
+    0 0 10px white;
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+.chrome-logo::before,
+.chrome-logo::after {
+  content: "";
+  display: block;
+}
+.chrome-logo::before {
+  width: 1.75em;
+  height: 2.375em;
+  position: absolute;
+  top: 26.4375em;
+  left: 13.4375em;
+  border-bottom-right-radius: 14.0625em;
+  background-color: #ffca38;
+  transform: rotate(30deg);
+}
+.chrome-logo::after {
+  width: 10.625em;
+  height: 10.625em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5.3125em;
+  margin-left: -5.3125em;
+  border-radius: 14.0625em;
+  background-color: #228ef4;
+  box-shadow: 0 0 0 0.9375em white;
+}
+.chrome-logo:hover {
+  transform: rotate(-720deg) scale(0.9);
+}
